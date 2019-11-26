@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+#normal_info input{height:50px; border:none; margin-left:25px;}
+#normal_info td{padding:0; border-bottom:1px solid #ececec; height:50px;}
+
+
+.genderBtn{color:#a1a1a1;}
+.genderBtn:hover{background:#8b8b8b; color:#ffffff;}
+
+#address_info td{ height:50px; border-bottom:1px solid #ececec;}
+#address_info .address_h{font-weight:bold; padding-left:25px;}
+#address_info input{border:none; margin-left:25px;}
+
+#current_address_info td{ height:50px; border-bottom:1px solid #ececec; height:50px;}
+#current_address_info .current_address_h{font-weight:bold; padding-left:25px;}
+#current_address_info input{border:none; margin-left:25px;}
+
+#plusDiv{
+	width:25px; height:25px; 
+	display:inline-block;text-align:center;
+	border:1px solid #aeaeae; float:right; 
+	margin-top:-52px; margin-left:20px; cursor:pointer;
+}
+
+#education_info tr{ height:50px; border-bottom:1px solid #ececec;}
+#education_info input {height:50px; border:none;}
+
+#qualification_info tr{ height:50px; text-align:center; border-bottom:1px solid #ececec;}
+#qualification_info input {width:90%; height:50px; border:none;}
+
+#language_info tr{height:50px; border-bottom:1px solid #ececec;}
+
+#livingAbroad_info td{ width:480px; height:50px; border-bottom:1px solid #ececec;}
+#livingAbroad_info input {margin-left:25px; width:240px; height:50px; border:none;}
+
+#countryAbroadSelect{border:none; width:480px; height:50px; padding-left:21px;color:#a1a1a1;}
+
+#career_info tr{ height:50px; border-bottom:1px solid #ececec;}
+#career_info input{ /* margin-left:25px; */ width:90%; border:none;  }
+#career_info textarea:focus{outline:none; height:50px;}
+
+#self_info tr{height:50px; border-bottom:1px solid #ececec;}
+#self_info input{border:none; margin-left:25px; }
+#self_info textarea:focus{outline:none;height:50px;}
+
+textarea::-webkit-input-placeholder{
+        color: #aeaeae;
+        font-family:Malgun Gothic;
+        font-size:13px;
+}
+
+#business_info textarea:focus{outline:none;}
+#business_info input{height:50px; border:none; margin-left:75px;}
+#business_info td{ color:#aeaeae; height:50px; border-bottom:1px solid #ececec;}
+#business_info .address_h{font-weight:bold; padding-left:25px;}
+
+#pw_info{border:1px solid #aeaeae; width:960px; margin-top:30px; margin-bottom:25px;}
+#pw_info td{ height:50px; }
+#pw_info input{ border:none; margin-left:25px; }
+
+#membership_info textarea:focus{outline:none;}
+#membership_info input{height:50px; border:none; margin-left:75px;}
+#membership_info td{ height:50px; border-bottom:1px solid #ececec;}
+#membership_info .address_h{font-weight:bold; padding-left:25px;}
+
+#pay_info input{height:50px; border:none; margin-left:45px;}
+#pay_info td{ height:50px; border-bottom:1px solid #ececec;}
+
+#join_info input{height:50px; border:none; margin-left:40px; width:80%;}
+#join_info td{ color:#aeaeae; height:50px; }
+
+
+/*22-01/02.html*/
+#login2_div{
+	background-color:#f8f8f8;
+	width:460px; height:191px; border:1px solid #a7a7a7;
+	position:relative; left:805px;
+	padding-top:30px; padding-left:40px;
+}
+#login2_div>#login2_div_inner{position:absolute; font-size:13px; }
+#login2_div_inner>span{border:1px solid #dbdada; 
+						padding:3px 6px; color:#9a9a9a;
+						margin-top:3px;}
+#login2_table{width:425px;}
+#login2_table input{
+	height:43px; padding-left:20px; margin-top:-5px; margin-left:-3px;
+	border:1px solid #c5c5c5;
+}
+#login2_table button{
+	width:111px; height:93px; margin-top:-5px; outline:none; cursor:pointer;
+	border:1px solid #c5c5c5; background:#ffffff; margin-left:-5px;
+	color:#2b2b2b;
+}
+#login2_util_div{width:430px;margin:0;}
+#login2_util_div>div{
+	display:inline-block;
+	margin-top:15px; padding-top:5px; color:#2b2b2b; text-align:center;
+	border:1px solid #aeaeae; width:100px; height:25px;
+	cursor:pointer;
+}
+
+/*웹에서 checkbox 숨기기*/
+input[type=checkbox] { display:none; }
+input[type=checkbox] + label { 
+display: inline-block; 
+cursor: pointer; 
+line-height: 22px; 
+padding-left: 22px; 
+background: url('../img/checkboxNone.png') left/22px no-repeat; 
+
+}
+
+input[type=checkbox]:checked + label { 
+background-image: url('../img/checkboxCheck.png'); 
+}
+
+#green>input[type=checkbox] + label { 
+display: inline-block; 
+cursor: pointer; 
+line-height: 22px; 
+padding-left: 22px; 
+background: url('../img/checkboxNone.png') left/22px no-repeat; 
+
+}
+
+#green>input[type=checkbox]:checked + label { 
+background-image: url('../img/checkboxGreenCheck.png'); 
+}
+
+/*웹에서 radio 숨기기*/
+	
+input[type="radio"] {position:relative;display: none;}	
+input[type="radio"] + label { 
+	display:inline-block;
+	cursor: pointer; 
+	 color:#aeaeae;
+	line-height: 22px; 
+	padding-left: 22px; 
+	background: url('../img/radioboxNone.png') left/22px no-repeat; 
+	}
+input[type="radio"]:checked + label {
+	display:inline-block;
+	cursor: pointer;
+	color:#2d2d2d;
+	line-height: 22px; 
+	padding-left: 22px; 
+	
+	background: url('../img/radioboxCheck.png') left/22px no-repeat;
+	}
+
+#container_41{width:960px; margin:auto; top:-150px;}
+#subject_41{
+	font-size:26px; color:#000000; /* margin-top:140px; */ margin-bottom:40px;
+	border:none; 
+}
+#subject_41::-webkit-input-placeholder{color:#cbcbcb;}
+#subject_41::-ms-input-placeholder{color:#cbcbcb;}
+.h2_41{font-size:24px; margin-bottom:40px; }
+.contents_41{margin:45px 0 60px 0; border:1px solid #aeaeae; width:960px; color:#aeaeae;}
+.contents_41 tr{height:49px; border-bottom:1px solid #ececec;}
+.contents_41 input{border:none;}
+
+.contents_45{margin:45px 0 60px 0; border:none; width:960px; color:#aeaeae;}
+.contents_45 tr{font-size:14px; height:49px; border-bottom:1px solid #ececec;}
+.contents_45 input{border:none;}
+
+#RegisteredTable tr{border-bottom:1px solid #ececec;}
+#RegisteredTable td{ height:50px; color:#8b8b8b}
+#cashTable td{border-bottom:1px solid #ececec; height:50px; color:#3d3d3d}
+
+#areaChoice{display:inline-block; margin-top:-15px; margin-right:20px; font-size:12px; color:#686868;}
+#areaChoice img{cursor:pointer;}
+
+#pagingDiv{margin-top:60px; width:100%;text-align:center;}
+
+#resumeBtnDiv{width:497px; margin:auto; padding-top:50px; padding-bottom:150px;}
+#resumeBtnDiv button{width:233px; height:69px; cursor:pointer;}
+#resumeBtnDiv #resumePreviewBtn{color:#ffffff; background:#3d3d3d; border:none;}
+#resumeBtnDiv #resumeAddRegisterBtn{color:#ffffff; margin-left:25px; border:1px solid #ffffff; background:#61bdaf;}
+#resumeBtnDiv #completeBtn{margin-left:132px; color:#ffffff; background:#3d3d3d; border:none;}
+
+#submitBtnDiv{width:700px; display:inline-block;  margin-left:235px; padding-top:78px;}
+#submitBtnDiv button{display:inline-block; width:235px; height:69px; cursor:pointer;}
+#submitBtnDiv #submitBtn{color:#ffffff; background:#3d3d3d; border:none;}
+#submitBtnDiv #cancleBtn{margin-left:25px;  border:1px solid #686868; cursor:pointer; background:#ffffff;}
+#submitBtnDiv .joinBtn{margin-left:25px;  border:1px solid #686868; cursor:pointer; background:#ffffff;}
+#submitBtnDiv .joinBtn:hover{background:#aeaeae;}
+
+#searchBtnDiv{padding:30px 30px 0 10px; margin-bottom:40px; height:60px;}
+#searchBtnDiv #searchBtn{display:inline-block; float:right; width:295px; height:60px; background:#2ba694; color:#fff; cursor:pointer; border:none;}

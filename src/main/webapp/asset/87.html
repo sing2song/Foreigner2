@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>87</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#main_search_wrap").load("main_search_wrap.html");  
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/mypage.css"/>
+<link rel="stylesheet" href="css/container.css"/>
+<link rel="stylesheet" id="theme" href="css/selectric.css" />
+
+</head> 
+<body> 
+
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+
+<div id="main_search_wrap">
+		
+</div><!--main_search_wrap_end-->
+	
+
+<div id="container">
+	<!--mypage_left_sidebar-->
+	<div id="mypage_left_sidebar">
+		<p style="font-size:23px; height:20px; padding-bottom:20px; border-bottom:2px solid #000000; margin-bottom:37px; font-weight:bold;">결제</p>
+			<ul>
+				<li>step1.상품 선택 및 안내</li>
+				<li>step2.결제 정보 및 동의</li>
+				<li>step3.결제</li>
+				<li>step4.결제완료</li>
+			</ul>	
+	</div>
+
+	<div id="mypage_container" style="top:-299px;">
+		<p class="mypage_container_h1" style="display:inline-block;">구분 : 신규</p>
+			<div style="width:966px;margin-left:-6px;">
+			
+			<table id="pay_info" style="border:1px solid #aeaeae; width:960px;margin-top:30px; margin-bottom:25px;">
+				<tr>
+					<td style="width:160px;"><input type="text" style="width:75px;" placeholder="구매상품" readonly></input></td>
+					<td style="width:320px; border-right:1px solid #ececec; font-size:13px; color:#a7a7a7;">
+					일반 채용 공고
+					</td>
+					<td style="">
+						<select class="recruitSelect" id="recruitSelect" style="width:310px;" name="" >
+							<option value="" >프리미엄 채용공고</option>
+							<option value="" selected>일반 채용공고</option>
+							<option value="">이력서 열람</option>
+						</select>
+					</td>					
+				</tr>	
+				<tr>
+					<td style="width:160px; border-bottom:none;"><input type="text" style="width:75px;" placeholder="기간" readonly></input></td>
+					<td style="width:320px; border-bottom:none;border-right:1px solid #ececec; font-size:13px; color:#a7a7a7;">
+					1주일
+					</td>
+					<td style="border-bottom:none;">
+						<select class="recruitSelect" id="periodSelect" style="width:310px;" name="" >
+							<option value="" selected>1주일</option>
+							<option value="">2주일</option>
+							<option value="">3주일</option>
+							<option value="">한달</option>
+						</select>
+					</td>					
+				</tr>			
+			</table>
+			
+			
+			
+		</div>
+				
+		</div>
+	
+</div>
+
+
+<!--footer-->
+<div id="footer">
+</div><!--footer_end-->
+
+</body> 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(function(){
+		$('.recruitSelect').selectric();
+	});
+});
+
+$('#recruitSelect').change(function(){
+	var recruit=$(this).parent().next().children('p').text();
+	
+	$(this).parent().parent().parent().prev().text(recruit).css('color','#aeaeae').css('font-size','13px');
+});
+
+$('#periodSelect').change(function(){
+	var period=$(this).parent().next().children('p').text();
+	$(this).parent().parent().parent().prev().text(period).css('color','#aeaeae').css('font-size','13px');
+});
+</script>
+</html>

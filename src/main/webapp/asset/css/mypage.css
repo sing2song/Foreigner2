@@ -1,0 +1,36 @@
+#mypage_left_sidebar{
+	width:250px; padding-top:80px;
+}
+#mypage_left_sidebar ul{width:250px; margin-left:-39px;}
+#mypage_left_sidebar li{
+	width:240px; font-size:19px; list-style:none; height:37px;
+	cursor:pointer; padding-left:10px; padding-top:13px;
+}
+#mypage_left_sidebar li:hover{
+	background:#2ba694; color:#ffffff;
+}
+
+#mypage_container{ height:fit-content; width:962px; position:relative;left:334px; top:-349px;}
+.mypage_container_h1{font-size:20px; font-weight:bold;}
+.mypage_container_h2{margin-top:30px; margin-bottom:30px;}
+#RegisteredResumeTable {width:966px;}
+#RegisteredResumeTable tr th{height:50px;}
+#RegisteredResumeTable th{border:1px solid #d7d7d7;}
+tbody{border:1px solid #727272; border-style:hidden;}
+#RegisteredResumeTable td{text-align:center;border:1px solid #d7d7d7; height:100px;}
+
+#resumeBtnDiv{width:497px; margin:auto; padding-top:78px;}
+#resumeBtnDiv button{width:233px; height:69px; cursor:pointer;}
+#resumeBtnDiv #resumeEditBtn{color:#ffffff; background:#3d3d3d; border:none;}
+#resumeBtnDiv #resumeAddRegisterBtn{margin-left:25px; border:1px solid #3d3d3d; background:#ffffff;}
+
+#submitBtnDiv{width:700px; display:inline-block;  margin-left:235px; padding-top:78px;}
+#submitBtnDiv button{display:inline-block; width:235px; height:69px; cursor:pointer;}
+#submitBtnDiv #submitBtn{color:#ffffff; background:#3d3d3d; border:none;}
+#submitBtnDiv #cancleBtn{margin-left:25px;  border:1px solid #686868; cursor:pointer; background:#ffffff;}
+
+#chargeBtn{
+	display:inline-block; width:160px; height:50px; cursor:pointer;
+	color:#ffffff; background:#3d3d3d; border:none;
+	
+}

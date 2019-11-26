@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>37</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+
+<style type="text/css">
+#recommand_table{border-collapse:collapse; }
+#recommand_table td{height:50px; border-bottom:1px solid #ececec;}
+#recommand_table input{border:none; height:50px; margin-left:30px; font-size:15px;}
+#recommand_table select{border:none; color:#a1a1a1; text-align-last:center;}
+#recommand_table option{height:50px;}
+
+</style>
+</head> 
+<body> 
+
+<div style="width:500px; height:600px;">
+	<div style="height:110px; margin-bottom:30px; background-image:url(img/recommandReqHeader.png);"></div>	
+	<table id="recommand_table" style="width:450px; margin:auto;">
+		<tr>
+			<td style="width:150px;">회사명</td>
+			<td>
+				<input type="text" placeholder="입력해주세요" />
+			</td>
+		</tr>
+		<tr>
+			<td>추천인 이름</td>
+			<td>
+				<input type="text" placeholder="입력해주세요" />
+			</td>
+		</tr>
+		<tr>
+			<td>추천인과의 관계</td>
+			<td>
+				<input type="text" placeholder="입력해주세요" />
+			</td>
+		</tr>
+		<tr>
+			<td>추천인 메일주소</td>			
+			<td>
+				<input type="text" style="height:30px; width:95px; margin-left:0px;" />
+				<span style="color:#a1a1a1;">@</span>
+				<input type="text" style="height:30px; width:94px; margin-left:0px;"></input>
+				<select name="recommandMail" id="recommandMail" style="width:98px;">
+					<option value="">선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="naver.com">naver.com</option>
+					<option value="daum.net">daum.net</option>
+					<option value="nate.com">nate.com</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="freechal.com">freechal.com</option>
+					<option value="">직접입력</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>추천인 사용 언어</td>
+			<td colspan="2">
+				<select name="recommandLanguage" id="recommandLanguage" style="width:290px; margin-left:30px;">
+					<option value="">선택</option>
+					<option value="">영어</option>
+					<option value="">한국어</option>
+					<option value="">중국어</option>
+					<option value="">일본어</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+	<p style="width:450px; margin:auto; font-size:12px; padding-top:50px; padding-bottom:20px;">
+		<strong>추천서 발급을 선택할 경우 추천인의 이메일로 지원자의 근무 사항에 대한 질의서가 발송되며, 추천서의 내용은 지원자에게는 공개되지 않습니다.
+		</strong>
+	</p>
+	
+	<div style="width:450px; margin:auto;">
+		<button style="width:220px; height:50px; background:#686868; border:none; cursor:pointer; color:#ffffff;">요청하기</button>
+		<button style="width:220px; height:50px; border:1px solid #686868; cursor:pointer; background:#ffffff;">취소</button>
+	</div>
+	
+</div>
+
+</body> 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+$('#recommandMail').change(function(){
+	var email=$(this).val();
+	
+	if(email=='직접입력'){
+		$(this).prev().val('');
+		$(this).prev().focus();
+	}else{
+		$(this).prev().val(email);
+	}
+	
+});
+
+
+</script>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>31</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/container.css">
+
+</head> 
+<body> 
+
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+
+<!--ad-->
+<div style="width:100%; background:#439fe5;">
+	<div style="width:1900px; margin:auto; margin-bottom:140px;">
+		<img style="width:1900px;" src="img/ad.png" alt="" />
+	</div>
+</div>
+<!--우측 광고-->
+<div style="width:160px; height:350px; background:#2ba694; float:right; margin-left:60px;">
+</div>
+<!--35_container-->
+<div id="container_35" style="width:960px; margin:auto;">
+	<p style="font-size:25px;">기업정보</p>
+	<table id="business_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse;">
+		<tr>
+			<td style="width:240px; border-bottom:1px solid #aeaeae;">
+			<span style="font-size:13px; margin-left:75px;">기업부문</span>
+			</td>
+			<td style="border-bottom:1px solid #aeaeae;">
+				<div style="display:inline-block;">
+					<input id="public" type="radio" name="business"/>
+					<label for="public">
+					<span style="font-size:13px; margin-left:5px;">공공기관</span>
+					</label>				
+				</div>
+				<div style="margin-left:60px;display:inline-block;">
+					<input id="major" type="radio" name="business"/>
+					<label for="major">
+					<span style="font-size:13px;margin-left:5px;">대기업</span>
+					</label>
+				</div>				
+				<div style="margin-left:60px;display:inline-block;">
+					<input id="mediumSamll" type="radio" name="business" checked/>
+					<label for="mediumSamll">
+					<span style="font-size:13px;margin-left:5px;">중소기업</span>
+					</label>
+				</div>					
+				<div style="margin-left:60px;display:inline-block;">
+					<input id="private" type="radio" name="business"/>
+					<label for="private">
+					<span style="font-size:13px;margin-left:5px;">개인</span>
+					</label>
+				</div>
+							
+			</td>
+		</tr>
+	</table>
+	
+
+	<table id="business_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:50px; margin-bottom:34px;">
+		<tr>
+			<td style="width:480px;border-right:1px solid #ececec;"><input type="text" placeholder="상호명" /></td>
+			<td style="width:480px;"><input type="text" placeholder="대표자명" /></td>
+			
+		</tr>
+		<tr>
+			<td style="width:410px;">
+				<input type="text" style="border:none;" readonly placeholder="우편번호" />
+			</td>
+			<td>
+				<button style="width:127px; height:32px; background:#2d2d2d; color:#ffffff; border:none;">우편번호 검색</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="text" style="border:none;" readonly placeholder="도로명 주소" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" >
+				<input type="text" style="border:none;" placeholder="상세주소" />
+			</td>
+		</tr>
+		<tr>
+			<td style="width:480px;border-right:1px solid #ececec;"><input type="text" placeholder="연락처1" /></td>
+			<td style="width:480px;"><input type="text" placeholder="연락처2" /></td>	
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="text" style="border:none;" placeholder="이메일" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="text" style="border:none;" placeholder="홈페이지주소" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left:50px; border-bottom:1px solid #aeaeae;">
+				<select id="workSelect">
+					<option value="" selected>업태</option>
+					<option value="">교육</option>
+					<option value="">건설</option>
+					<option value="">농/어업</option>
+					<option value="">요식업</option>
+					<option value="">호텔</option>
+					<option value="">관광</option>
+					<option value="">예술/연예</option>
+					<option value="">무역/유통</option>
+					<option value="">기타</option>
+				</select>
+			</td>		
+		</tr>
+	</table>
+	
+	<p style="font-size:25px;">기업소개 <span style="font-size:12px; color:#aeaeae;">담당자님이 직접 작성해주세요.</span></p>
+	<table id="business_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+	<tr>
+		<td style="border-bottom:1px solid #aeaeae;">
+			<textarea rows="10" style="width:99.5%; border:0; resize:none;"></textarea>
+		</td>
+	</tr>
+	</table>
+	
+	<p style="font-size:25px;">기업소개 <span style="font-size:12px; color:#aeaeae;">이메일을 입력하시면 해당 근로자에게 기업소개 작성 요청을 하실 수 있습니다.</span></p>
+	<table id="business_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+	<tr >
+			<td style="width:800px;">
+				<input type="text" style="width:70%; height:50px; border:none;" placeholder="E-mail1" />
+			</td>
+			<td >
+				<button style="width:90px; height:32px; background:#2d2d2d; color:#ffffff; border:none;">전송</button>
+			</td>
+	</tr>
+	<tr>
+		<td  style="border-bottom:1px solid #aeaeae;" >
+			<input type="text" style="width:70%; height:50px; border:none;" placeholder="E-mail2" />
+		</td>
+		<td  style="border-bottom:1px solid #aeaeae;">
+			<button style="width:90px; height:32px; background:#2d2d2d; color:#ffffff; border:none;">전송</button>
+		</td>
+	</tr>
+	</table>
+	
+	<table id="business_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+		<tr>
+			<td><input type="text" placeholder="상시 근로자 수" readonly></input></td>
+			<td style="border-right:1px solid #ececec;">
+				<select name="" id="laborerSelect">
+					<option value="" selected>0~5</option>
+					<option value="">6~10</option>
+					<option value="" >11~50</option>
+					<option value="">51~300</option>
+					<option value="" >301~1000</option>
+					<option value="">1000+</option>
+					
+				</select>
+			</td>
+			<td><input type="text" placeholder="상시 외국인 근로자 수" readonly></input></td>
+			<td>
+				<select name="" id="laborerSelect">
+					<option value="" selected>0~5</option>
+					<option value="">6~10</option>
+					<option value="" >11~50</option>
+					<option value="">51~300</option>
+					<option value="" >301~1000</option>
+					<option value="">1000+</option>
+					
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<input type="text" style="width:90%;" placeholder="사업자 등록 번호"></input>
+			</td>		
+		</tr>
+		<tr >
+			<td colspan="3"  style="border-bottom:1px solid #aeaeae;">
+				<input type="text" style="width:70%; height:50px; border:none;" placeholder="사업자 등록 첨부" />
+			</td>
+			<td colspan="1"  style="border-bottom:1px solid #aeaeae;">
+				<button style="width:90px; height:32px; background:#fff; color:#2d2d2d; border:1px solid #2d2d2d;">파일첨부</button>
+			</td>
+		</tr>
+	</table>
+	
+	
+	
+	<div id="resumeBtnDiv">
+			<button id="completeBtn">완료</button>
+	</div>
+</div>
+<!-- 35_container_end -->
+
+
+
+<!--footer-->
+<div id="footer">
+	
+</div><!--footer_end-->
+
+</body> 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<link rel="stylesheet" id="theme" href="css/selectric.css" />
+<script type="text/javascript">
+$(document).ready(function(){
+	$(function(){
+		$('select').selectric();
+	});
+});
+
+</script>
+</html>

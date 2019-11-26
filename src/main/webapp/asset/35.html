@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>35 </title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/container.css">
+<link rel="stylesheet" id="theme" href="css/selectric.css" />
+
+</head> 
+<body> 
+
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+
+<!--ad-->
+<div style="width:100%; background:#439fe5;">
+	<div style="width:1900px; margin:auto; margin-bottom:140px;">
+		<img style="width:1900px;" src="img/ad.png" alt="" />
+	</div>
+</div>
+<!--우측 광고-->
+<div style="width:160px; height:350px; background:#2ba694; float:right; margin-left:60px;">
+</div>
+<!--35_container-->
+<div id="container_35" style="width:1005px; margin:auto;">
+	<p style="font-size:25px;">기초정보</p>
+	<table id="normal_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse;">
+		<tr>
+			<td style="width:480px;border-right:1px solid #ececec;"><input type="text" placeholder="성" /></td>
+			<td style="width:330px;"><input type="text" placeholder="이름" /></td>
+			<td rowspan="3">
+				<div style="width:150px; height:159px; background:#ececec;">
+					<button style="border:1px solid #aeaeae; width:69px; height:33px; margin:59px 0 0 40px;">
+					사진선택
+					</button>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<select name="" id="countrySelect">
+					<option style="border:none; color:#a1a1a1; width:770px; height:50px; padding-left:21px;" value="" selected>국적</option>
+					<option value="korea">대한민국</option>
+					<option value="china">중국</option>
+					<option value="america">미국</option>
+					<option value="uk">영국</option>
+					<option value="canada">캐나다</option>
+					<option value="australia">호주</option>
+					<option value="newZealand">뉴질랜드</option>
+					<option value="southAfrica">남아공</option>
+					<option value="philippines">필리핀</option>
+					<option value="vietnam">베트남</option>
+					<option value="japan">일본</option>
+					<option value="etc">기타</option>
+				</select>
+				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="text" placeholder="생년월일" /></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<input type="text" placeholder="연락처 1" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<input type="text" placeholder="연락처 2" />
+			</td>
+		</tr>
+		<tr>
+			<td class="genderBtn" style="text-align:center; cursor:pointer; border-bottom:1px solid #aeaeae;">남</td>
+			<td class="genderBtn" colspan="2" style="text-align:center; cursor:pointer; border-bottom:1px solid #aeaeae;">여</td>
+		</tr>
+	</table>
+
+	<table id="address_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:50px; margin-bottom:34px;">
+		<tr>
+			<td colspan="2" class="address_h">주민등록 주소</td>
+		</tr>
+		<tr>
+			<td style="width:410px;">
+				<input type="text" style="border:none;" readonly placeholder="우편번호" />
+			</td>
+			<td>
+				<button style="width:127px; height:32px; background:#2d2d2d; color:#ffffff; border:none;">우편번호 검색</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="text" style="border:none;" readonly placeholder="도로명 주소" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="border-bottom:1px solid #aeaeae;">
+				<input type="text" style="border:none;" placeholder="상세주소" />
+			</td>
+		</tr>
+	</table>
+	
+	<div class="checkbox-container" style=" width:460px; margin:auto; padding-bottom:30px;">
+		<div class="agree"> 
+		
+		 <input type="checkbox" id="box"><label for="box" style="">거주중인 주소와 주민등록주소가 같을 경우 체크해주세요.</label>
+				
+		</div>
+	</div>
+
+	<table id="current_address_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:34px; margin-bottom:30px;">
+		<tr>
+			<td colspan="2" class="current_address_h">현재 거주중인 주소</td>
+		</tr>
+		<tr>
+			<td style="width:410px;">
+				<input type="text" readonly placeholder="우편번호" />
+			</td>
+			<td>
+				<button style="width:127px; height:32px; background:#2d2d2d; color:#ffffff; border:none;">우편번호 검색</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="text"  readonly placeholder="도로명 주소" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="border-bottom:1px solid #aeaeae;">
+				<input type="text"  placeholder="상세주소" />
+			</td>
+		</tr>
+	</table>
+	
+	<p style="font-size:25px;">희망근무 조건</p>
+	<table id="workCodition_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+	<tr>
+		<td colspan="2" style="width:240px;">
+			<select name="" id="workSelect">
+				<option value="" selected>직종</option>
+				<option value="">교육</option>
+				<option value="">건설</option>
+				<option value="">농/어업</option>
+				<option value="">요식업</option>
+				<option value="">호텔</option>
+				<option value="">관광</option>
+				<option value="">예술/연예</option>
+				<option value="">무역/유통</option>
+				<option value="">기타</option>
+			</select>
+		</td>
+		<td colspan="2" style="width:240px;">
+			<select name="" id="serviceTypeSelect">
+				<option value="" selected>근무형태</option>
+				<option value="">정규직</option>
+				<option value="">계약직</option>
+				<option value="">인턴</option>
+				<option value="">파트타임</option>
+				<option value="">프리랜서</option>
+			</select>
+		</td>
+		<td colspan="2" style="width:240px;">
+			<select name="" id="preferredAreaSelect">
+				<option value="" selected>선호지역</option>
+				<option value="">서울</option>
+				<option value="">인천</option>
+				<option value="">경기</option>
+				<option value="">대전</option>
+				<option value="">대구</option>
+				<option value="">부산</option>
+				<option value="">울산</option>
+				<option value="">광주</option>
+				<option value="">경상도</option>
+				<option value="">강원도</option>
+				<option value="">충청도</option>
+				<option value="">제주도</option>
+			</select>
+		</td>
+		<td style="width:80px; font-size:13px; color:#aeaeae;">시작가능일</td>
+		<td colspan="2" style="width:160px;">
+			<!-- <select name="" id="startDateSelect">
+				<option value="" selected>시작 가능일</option>
+				<option value=""></option>
+			</select> -->
+			<input type="date" style="border:none; width:160px;"></input>
+		</td>
+	</tr>
+	</table>
+	
+	<div style="display:inline-block;">
+		<p style="font-size:25px;">학력정보</p>
+		<table id="education_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+		<tr style="text-align:center; ">
+			<td style="width:170px; border-right:1px solid #ececec;">학교명</td>
+			<td style="width:165px; border-right:1px solid #ececec;">졸업년월</td>
+			<td style="width:185px; border-right:1px solid #ececec;">전공</td>
+			<td style="width:90px; border-right:1px solid #ececec;">소재지</td>
+			<td style="width:170px; border-right:1px solid #ececec;">학위</td>
+			<td style="width:180px; ">특이사항</td>
+		</tr>
+		<tr style="border-bottom:1px solid #aeaeae;">
+			<td style="border-right:1px solid #ececec;"><input type="text" style="width:170px;"></input></td>
+			<td style="border-right:1px solid #ececec;"><input type="text" style="width:165px;"></input></td>
+			<td style="border-right:1px solid #ececec;"><input type="text" style="width:185px;"></input></td>
+			<td style="border-right:1px solid #ececec;"><input type="text" style="width:90px;"></input></td>
+			<td style="margin-left:-20px; border-right:1px solid #ececec;">
+				<select name="" id="degreeSelect" style="width:170px;">
+					<option value="" selected>선택</option>
+					<option value="">준학사</option>
+					<option value="">학사</option>
+					<option value="">석사</option>
+					<option value="">박사</option>
+					<option value="">고등학교 졸</option>
+					<option value="">중학교 졸</option>
+					<option value="">초등학교 졸</option>
+				</select>
+			</td>
+			<td><input type="text" style="width:180px;"></input></td>
+		</tr>
+		</table>
+	</div>
+	
+	<div id="plusDiv">
+		+
+	</div>
+	
+	<div style="display:inline-block;">
+		<p style="font-size:25px;">자격사항</p>
+		<table id="qualification_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+		<tr>
+			<td style="width:305px; border-right:1px solid #ececec;">자격증명</td>
+			<td style="width:175px; border-right:1px solid #ececec;">발급일</td>
+			<td style="width:175px; border-right:1px solid #ececec;">발급기관</td>
+			<td style="width:305px; ">유효기간</td>
+			
+		</tr>
+		<tr style="border-bottom:1px solid #aeaeae;">
+			<td style="border-right:1px solid #ececec;"><input type="text"></input></td>
+			<td style="border-right:1px solid #ececec;"><input type="text"></input></td>
+			<td style="border-right:1px solid #ececec;"><input type="text"></input></td>
+			<td><input type="text"></input></td>
+			
+		</tr>
+		</table>
+	</div>
+	<div id="plusDiv">
+		+
+	</div>
+	
+	<div style="display:inline-block;">
+		<p style="font-size:25px;">언어</p>
+		<table id="language_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+			<tr>
+				<td style="text-align:center; border-right:1px solid #ececec;">언어</td>
+				<td style="text-align:center;">활용수준</td>
+			</tr>
+			<tr style="border-bottom:1px solid #aeaeae;">
+				<td style="border-right:1px solid #ececec;">
+					<select name="" id="languageSelect">
+						<option value="" selected>선택</option>
+						<option value="">영어</option>
+						<option value="">중국어</option>
+						<option value="">일본어</option>
+						<option value="">한국어</option>
+						<option value="">베트남어</option>
+						<option value="">스페인어</option>
+						<option value="">불어</option>
+						<option value="">독일어</option>
+						<option value="">기타</option>
+					</select>
+				</td>
+				<td >
+					<select name="" id="standardSelect">
+						<option value="" selected>선택</option>
+						<option value="">기초</option>
+						<option value="">중급</option>
+						<option value="">상급</option>
+						<option value="">원어민 수준</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="plusDiv">
+		+
+	</div>
+	
+	<div style="display:inline-block;">
+		<p style="font-size:25px;">해외거주 경험</p>
+		<table id="livingAbroad_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+			<tr>
+				<td style="text-align:center;border-right:1px solid #ececec;">국가</td>
+				<td style="text-align:center;">거주기간</td>
+			</tr>
+			<tr >
+				<td style="border-bottom:none; border-right:1px solid #ececec;">
+					<input type="text" placeholder="직접 입력"></input>
+				</td>
+				<td style="border-bottom:none;">
+					<select name="" id="periodSelect">
+						<option value="" selected>선택</option>
+						<option value="">1년 미만</option>
+						<option value="">1~3년</option>
+						<option value="">4~6년</option>
+						<option value="">7년 이상</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="plusDiv">
+		+
+	</div>
+	
+	<div style="display:inline-block;">
+		<p style="font-size:25px;">경력정보</p>
+		<table id="career_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:25px;">
+			<tr>
+				<td style="width:195px; border-right:1px solid #ececec;text-align:center;">회사명</td>
+				<td style="width:150px; border-right:1px solid #ececec;text-align:center;">재직기간</td>
+				<td style="width:110px; border-right:1px solid #ececec;text-align:center;">직위</td>
+				<td style="width:120px; border-right:1px solid #ececec;text-align:center;">담당업무</td>
+				<td style="width:145px; border-right:1px solid #ececec;text-align:center;">소재지</td>
+				<td style="width:240px; text-align:center;">추천서</td> 
+			</tr>
+			<tr style="border-bottom:1px solid #aeaeae;">
+				<td style="border-right:1px solid #ececec;"><input type="text"></input></td>
+				<td style="border-right:1px solid #ececec;"><input type="text"></input></td>
+				<td style="border-right:1px solid #ececec;"><input type="text"></input></td>
+				<td style="border-right:1px solid #ececec;"><input type="text"></input></td>
+				<td style="border-right:1px solid #ececec;"><input type="text"></input></td>
+				<td>
+				<button style="font-size:10px; color:#aeaeae; border:1px solid #aeaeae; background-color :#fff; box-shadow:0px 2px 2px #aeaeae;width:55px; height:33px; margin-left:45px; cursor:pointer;">
+				발급요청
+				</button>
+				<button style="font-size:10px; color:#aeaeae; border:1px solid #aeaeae; background-color :#fff; box-shadow:0px 2px 2px #aeaeae;width:89px; height:33px; margin:auto; cursor:pointer;">
+				보유추천서등록
+				</button>
+				
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="6">
+				<span style="font-size:13px; margin-left:25px; color:#aeaeae;">경력기술</span>
+				</td>		
+			</tr>
+			<tr style="border-bottom:1px solid #aeaeae;">
+				<td colspan="6">
+				
+				<!-- 
+				<input type="text" style="width:90%;" placeholder="내용(자세한 경력사항을 적어주세요.)"></input>
+				 -->
+				<textarea 
+				style="margin-left:25px; color:#a1a1a1; resize:vertical; padding-top:15px; width:96%; border:none;overflow:visible;" 
+				placeholder="내용(자세한 경력사항을 적어주세요.)"></textarea>
+				</td>
+				
+			</tr>
+		</table>
+	</div>
+	<div id="plusDiv">
+		+
+	</div>
+	<p style="font-size:11px; color:#61bdaf; margin-bottom:90px;">
+	추천서가 많으면 취업에 유리할 수 있습니다.<br/>추천서 발급을 선택할 경우 추천인의 이메일로 지원자의 근무사항에 대한 질의서가 발송되며, 추천서의 내용은 지원자에게 공개되지 않습니다.
+	</p>
+	
+	
+		
+	<p style="font-size:25px;">자기소개서</p>
+	<table id="self_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:30px; margin-bottom:25px;">
+		<tr style="border-bottom:1px solid #aeaeae;">
+			<td>
+			<!-- 
+			<input type="text" style="width:90%;" placeholder="내용(자세한 경력사항을 적어주세요.)"></input>
+			 -->
+			 <textarea 
+			 style="margin-left:25px; color:#a1a1a1; resize:vertical; padding-top:15px; width:96%; border:none; overflow-y:hidden;" 
+			  placeholder="내용(자세한 경력사항을 적어주세요.)"></textarea>
+			
+			</td>
+			
+		</tr>
+	</table>
+	
+	
+	<div id="resumeBtnDiv">
+			<button id="resumePreviewBtn">이력서 미리보기</button>
+			<button id="resumeAddRegisterBtn">이력서 등록</button>
+	</div>
+</div>
+<!-- 35_container_end -->
+
+
+
+<!--footer-->
+<div id="footer">
+	
+</div><!--footer_end-->
+
+</body> 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	
+	
+	$("textarea").on('keydown keyup', function () {
+		  $(this).height(1).height( $(this).prop('scrollHeight')+12 );	
+	});
+	
+	$('.agree_same_btn').click(function(){
+		if($(this).attr('src')=="img/checkboxNone.png"){
+			this.src="img/checkboxCheck.png";
+		} else {
+			this.src="img/checkboxNone.png";
+		}
+	});
+	$(function(){
+		$('select').selectric();
+	});
+});
+
+</script>
+</html>

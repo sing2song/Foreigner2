@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>45 </title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/container.css">
+
+</head> 
+<body> 
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+
+<!--container-->
+<div id="container">
+	
+	<div id="container_41">
+	<p class="h2_41" style="margin-top:150px; margin-bottom:20px;">기업(회사)명</p>
+	<p class="h2_41"><strong>채용공고 타이틀</strong></p>
+	
+	<div class="contents_45">
+		<table style="border-collapse:collapse;">
+			<tr>
+				<td style="width:160px; padding-left:45px;">모집인원</td>
+				<td style="width:320px;">
+					<input type="text" placeholder="00" />
+				</td>
+				<td style="width:127px; padding-left:45px;">근무시작일</td>
+				<td style="width:330px; margin-left:60px;">
+					<input type="text" placeholder="0000-00-00" />
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-left:45px;">직종</td>
+				<td colspan="3">
+					<input type="text" placeholder="직종" />
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-left:45px;">담당업무</td>
+				<td colspan="3">
+					<input type="text" placeholder="최대 50자까지 작성하실 수 있습니다." style="width:500px;"/>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<p class="h2_41">필수자격요건 / 우대요건</p>
+	<div class="contents_45" style="margin-top:0px;">
+		<table style="border-collapse:collapse;">
+			<tr><!--학력-->
+				<td style="width:65px;">
+					<span style=" color:red; font-size:13px;">필수</span>
+				</td>
+				<td style="width:100px; padding-left:20px;">
+					학력
+				</td>
+				<td colspan="4" style="width:810px;">
+					<input type="text" placeholder="고등학교" readonly/>
+				</td>
+			</tr>
+
+			<tr><!--전공-->
+			<td>
+				<span style="color:red; font-size:13px;">필수</span>
+			</td>
+				<td style="width:100px; padding-left:20px;">
+					전공
+				</td>
+				<td colspan="4" style="width:710px;">
+					<input type="text" placeholder="전공무관" readonly />
+				</td>
+			</tr>
+
+			<tr><!--경력&국적-->
+				<td>
+					<span style="color:red; font-size:13px;">필수</span>
+				</td>
+				<td style="width:100px; padding-left:20px;">
+					경력
+				</td>
+				<td  style="width:283px;">
+					<input type="text" placeholder="3년 이하" readonly />
+				</td>
+				<td style="width:65px;">
+					<span style="color:#000; font-size:13px;">우대</span>
+				</td>
+				<td style="width:100px; padding-left:20px;">
+					국적
+				</td>
+				<td style="width:283px;">
+					<input type="text" placeholder="뉴질랜드" readonly />
+				</td>
+			</tr>
+
+			<tr><!--성별&연령-->
+				<td>
+					<span style="color:#000; font-size:13px;">우대</span>
+				</td>
+				<td style="width:100px; padding-left:20px;">
+					성별
+				</td>
+				<td  style="width:283px;">
+					<input type="text" placeholder="성별무관" readonly />
+				</td>
+				<td>
+					<span style="color:#000; font-size:13px;">우대</span>
+				</td>
+				<td style="width:100px; padding-left:20px;">
+					연령
+				<td style="width:283px;">
+					<input type="text" placeholder="51세이상" readonly />
+				</td>
+			</tr>
+
+			<tr><!--자격증 보유-->
+				<td>
+					<span style="color:#000; font-size:13px;">우대</span>
+				</td>
+				<td style="width:100px; padding-left:20px;">
+				자격증 보유
+				</td>
+				<td colspan="4" style="width:710px;">
+					<input type="text" placeholder="무관" readonly/>
+				</td>
+			</tr>
+
+			<tr><!--추천서 보유-->
+				<td>
+					<span style="color:#000; font-size:13px;">우대</span>
+				</td>
+				<td style="width:100px; padding-left:20px;">
+					추천서 보유
+				</td>
+				<td colspan="4" style="width:710px;">
+					<input type="text" placeholder="보유" readonly/>
+				</td>
+			</tr>
+
+		</table>
+	</div>
+
+	<p class="h2_41">계약조건</p>
+	<div class="contents_45">
+		<table style="border-collapse:collapse;">
+			<tr>
+				<td style="width:150px;">채용구분</td>
+				<td style="width:810px;">
+					<input type="text" placeholder="정규직" readonly/>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:150px;">급여</td>
+				<td style="width:810px;">
+					<input type="text" placeholder="협의 후 결정" readonly/>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:150px;">복리후생</td>
+				<td style="width:810px;">
+					<input type="text" style="width:90%" placeholder="4대보험 주거지원 항공권 중식" readonly/>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<p class="h2_41">근무조건</p>
+	<div class="contents_45">
+		<table style="border-collapse:collapse;">
+			<tr>
+				<td style="width:150px;">근무요일</td>
+				<td colspan="3" style="width:810px;">
+					<input type="text" style="width:90%" placeholder="월 화 수 목 금" readonly/>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:150px;">근무시간</td>
+				<td  style="width:300px;">
+					<input type="text" placeholder="08시" readonly />
+				</td>
+				<td style="width:170px;">~</td>
+				<td  style="width:300px;">
+					<input type="text" placeholder="18시" readonly />
+				</td>		
+			</tr>
+
+			<tr>
+				<td style="width:150px;">근무지역</td>
+				<td colspan="3" style="width:810px;">
+					<input type="text" style="width:90%" placeholder="경기" readonly/>
+				</td>
+			</tr>
+			
+			<tr>
+				<td style="width:150px;">고객연령</td>
+				<td  style="width:283px;">
+					<input type="text" placeholder="만 19세" readonly />
+				</td>
+				<td>~</td>
+				<td  style="width:283px;">
+					<input type="text" placeholder="40세" readonly />
+				</td>	
+			</tr>
+			
+			<tr>
+				<td style="width:150px;">채용직무</td>
+				<td colspan="3" style="width:810px;">
+					<input style="width:90%" type="text" placeholder="직무 상세내용을 작성해주세요." readonly/>
+				</td>
+			</tr>
+
+		</table>
+	</div>
+	<p class="h2_41">접수기간 및 방법</p>
+	<div class="contents_45">
+		<table style="border-collapse:collapse;">
+			<tr>
+				<td style="width:150px;">접수기간</td>
+				<td  style="width:283px;">
+					<input type="text" placeholder="19년 9월 2일" readonly />
+				</td>
+				<td style="width:170px;">~</td>
+				<td  style="width:225px;">
+					<input type="text" placeholder="19년 9월 31일" readonly />
+				</td>
+				<td style="width: 60px">
+					<p style="display:inline-block; float:right; width:50px; height:20px; 
+					border:none; background-color:#b41b1b; color:#fff; text-align:center;">D-20</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:150px;">접수방법</td>
+				<td colspan="4" style="width:810px;">
+					<input style="width:90%" type="text" placeholder="이메일" readonly/>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:150px;">채용담당자 연락처</td>
+				<td colspan="4" style="width:810px;">
+					<input style="width:90%" type="text" placeholder="smkang0227@gmail.com" readonly/>
+				</td>
+			</tr>
+
+
+		</table>
+	</div>
+	
+	<p style="font-size:25px;">기업정보</p>
+	<div class="contents_45">
+	
+		<table style="width:960px; border-collapse:collapse;">
+		<tr>
+			<td style="width:150px;">기업부문</td>
+			<td>
+				<input style="width:90%" type="text" placeholder="중소기업" readonly/>
+			</td>
+			</tr>
+		</table>	
+	
+		<table style="width:960px; border-collapse:collapse; margin-top:50px; margin-bottom:34px;">
+			<tr>
+				<td style="width:150px;"><input type="text" placeholder="상호명" /></td>
+				<td style="width:330px;"><input type="text" placeholder="상호명" /></td>
+				<td style="width:150px;"><input type="text" placeholder="대표자명" /></td>
+				<td style="width:330px;"><input type="text" placeholder="강상묵" /></td>
+				
+			</tr>
+			<tr>
+				<td style="width:150px;">
+				주소
+				</td>
+				<td colspan="3" style="width:810px;">
+					<input style="width:90%" type="text" placeholder="63000" readonly/>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:150px;">
+				</td>
+				<td colspan="3" style="width:810px;">
+					<input style="width:90%" type="text" placeholder="서울특별시 강남구 테헤란로 123" readonly/>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:150px;">
+				</td>
+				<td colspan="3" style="width:810px;">
+					<input style="width:90%" type="text" placeholder="00빌딩  4층 405호" readonly/>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:150px;"><input type="text" placeholder="연락처1" /></td>
+				<td style="width:330px;"><input type="text" placeholder="010-1234-5678" /></td>
+				<td style="width:150px;"><input type="text" placeholder="연락처2" /></td>
+				<td style="width:330px;"><input type="text" placeholder="010-1234-5678" /></td>
+				
+			</tr>
+			<tr>
+				<td style="width:150px;">
+				이메일
+				</td>
+				<td colspan="3" style="width:810px;">
+					<input style="width:90%" type="text" placeholder="smkang0227@gmail.com" readonly/>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:150px;">
+				홈페이지 주소
+				</td>
+				<td colspan="3" style="width:810px;">
+					<input style="width:90%" type="text" placeholder="smkang0227.co.kr" readonly/>
+				</td>
+			</tr>
+			
+		</table>	
+	</div>
+	
+	<div id="resumeBtnDiv">
+			<button id="resumePreviewBtn">스크랩</button>
+			<button id="resumeAddRegisterBtn">즉시지원</button>
+	</div>
+	
+	</div>
+
+</div>
+
+
+
+<!--footer-->
+<div id="footer">
+	
+</div><!--footer_end-->
+
+
+</body> 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<link rel="stylesheet" id="theme" href="css/selectric.css" />
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$(function(){
+		$('select').selectric();
+	});
+});
+
+</script>
+</html>

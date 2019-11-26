@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>70</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#main_search_wrap").load("main_search_wrap.html");  
+$("#mypage_left_sidebar").load("mypage_left_sidebar.html");  
+
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/mypage.css">
+<link rel="stylesheet" href="css/container.css">
+
+
+</head> 
+<body> 
+
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+<div id="main_search_wrap">
+	</div><!--main_search_wrap_end-->
+
+<div id="container">
+	<!--mypage_left_sidebar-->
+	<div id="mypage_left_sidebar">
+	</div>
+	
+	<div id="mypage_container">
+		<p class="mypage_container_h1">서비스 처리 결과 보기</p>
+		<div style="width:966px; border:1px solid #727272; margin-left:-6px; margin-top:60px;">
+			<table id="RegisteredTable" style="border-collapse:collapse;" >
+				<tr>
+					<td style="width:240px; border-right:1px solid #ececec; text-align:center">구분</td>
+					<td style="width:240px; border-right:1px solid #ececec; text-align:center">접수일</td>
+					<td style="width:240px; border-right:1px solid #ececec; text-align:center">상태</td>
+					<td style="width:240px; text-align:center">처리완료일</td>					
+				</tr>
+				<tr>
+					<td style="border-right:1px solid #ececec;  text-align:center">근로 계약서</td>
+					<td style="border-right:1px solid #ececec; text-align:center">00.00.00</td>
+					<td style="border-right:1px solid #ececec; text-align:center">
+						<button style="border:1px solid #2ba694; color:#fff; background-color:#2ba694; width:90px; height:28px; margin:auto">
+						처리완료
+						</button>
+					</td>
+					<td style="text-align:center">00.00.00</td>					
+				</tr>
+				<tr>
+					<td style="border-right:1px solid #ececec; text-align:center">노무 상담</td>
+					<td style="border-right:1px solid #ececec; text-align:center">00.00.00</td>
+					<td style="border-right:1px solid #ececec; text-align:center">
+						<button style="border:1px solid #aeaeae; color:#fff; background-color:#aeaeae; width:90px; height:28px; margin:auto">
+						견직서 발행
+						</button>					
+					</td>
+					<td style="text-align:center">00.00.00</td>					
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+
+</div>
+
+
+<!--footer-->
+<div id="footer">
+	
+</div><!--footer_end-->
+
+</body> 
+</html>

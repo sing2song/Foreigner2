@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>25</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/container.css">
+
+</head> 
+<body> 
+
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+
+<!--ad-->
+<div style="width:100%; background:#439fe5;">
+	<div style="width:1900px; margin:auto; margin-bottom:140px;">
+		<img style="width:1900px;" src="img/ad.png" alt="" />
+	</div>
+</div>
+
+<!--35_container-->
+<div id="container_35" style="width:960px; margin:auto;">
+	<p style="font-size:25px;">회원가입</p>
+	
+	<table id="join_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:50px; margin-bottom:34px;">
+		<tr style="border-bottom:1px solid #ececec;">
+			<td style="width:290px;">
+				<input type="text" style="width:250px; margin-right:25px;" placeholder="이메일 주소" />
+			</td>
+			<td  style="width:20px;">@</td>
+			<td  style="width:290px;"><input type="text" id="email" style="width:250px;"/></td>
+			<td style=" width:360px;">				
+				<select id="emailSelect">
+					<option value="" selected>선택</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="naver.com">naver.com</option>
+					<option value="daum.net">daum.net</option>
+					<option value="nate.com">nate.com</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="freechal.com">freechal.com</option>
+					<option value="직접 입력">직접 입력</option>
+					
+				</select>
+			</td>
+		</tr>
+		<tr style="border-bottom:1px solid #ececec;">
+			<td colspan="4">
+				<input type="text" style="border:none;" placeholder="비밀번호" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4" >
+				<input type="text" style="border:none;" placeholder="비밀번호 확인" />
+			</td>
+		</tr>
+		
+	</table>
+	
+	<table id="join_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse; margin-top:50px; margin-bottom:34px;">
+		<tr style="border-bottom:1px solid #aeaeae;">
+			<td style="width:900px; ">
+				<span style="color:#aeaeae; margin-left:40px;">전체동의</span>
+				
+			</td>
+			
+			<td style="width:60px; padding-left:20px;">
+				<img class="agree_btn" src="img/checkboxNone.png" alt="" />
+			</td>
+		</tr>
+		<tr>
+			<td style="width:410px;">
+				<span style="font-size:13px; color:#aeaeae; margin-left:40px;">필수동의 (필수)</span>
+				<a href="#">
+				<span style="color:#afafaf; text-decoration:underline;font-size:12px; padding-right:79px;">내용보기</span>
+				</a>
+			</td>
+			<td style="width:60px; padding-left:20px;">
+				<img class="agree_btn" src="img/checkboxNone.png" alt="" />
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<span style="font-size:13px; color:#aeaeae; margin-left:40px;">필수동의 (필수)</span>
+				<a href="#">
+				<span style="color:#afafaf; text-decoration:underline;font-size:12px; padding-right:79px;">내용보기</span>
+				</a>
+			</td>
+			<td style="width:60px; padding-left:20px;">
+				<img class="agree_btn" src="img/checkboxNone.png" alt="" />
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<span style="font-size:13px; color:#aeaeae; margin-left:40px;">필수동의 (필수)</span>
+				
+			</td>
+			<td style="width:60px; padding-left:20px;">
+				<img class="agree_btn" src="img/checkboxNone.png" alt="" />
+			</td>
+		</tr>
+		
+	</table>
+	
+	<table id="join_info" style="border:1px solid #aeaeae; width:960px; border-collapse:collapse;">
+		<tr>
+			<td style="width:240px; border-bottom:1px solid #aeaeae;">
+			<span style="font-size:13px; margin-left:40px;">정보보유기간</span>
+			</td>
+			<td style="border-bottom:1px solid #aeaeae;">
+				<div style="display:inline-block;">
+					<input id="one" type="radio" name="infoOwn"/>
+					<label for="one">
+					<span style="font-size:13px; margin-left:5px;">1년</span>
+					</label>				
+				</div>
+				<div style="margin-left:60px;display:inline-block;">
+					<input id="two" type="radio" name="infoOwn" checked/>
+					<label for="two">
+					<span style="font-size:13px;margin-left:5px;">2년</span>
+					</label>
+				</div>				
+				<div style="margin-left:60px;display:inline-block;">
+					<input id="three" type="radio" name="infoOwn" />
+					<label for="three">
+					<span style="font-size:13px;margin-left:5px;">3년</span>
+					</label>
+				</div>					
+				<div style="margin-left:60px;display:inline-block;">
+					<input id="withdraw" type="radio" name="infoOwn"/>
+					<label for="withdraw">
+					<span style="font-size:13px;margin-left:5px;">탈퇴시</span>
+					</label>
+				</div>
+							
+			</td>
+		</tr>
+	</table>
+	
+	
+	
+	<div id="resumeBtnDiv">
+			<button id="completeBtn">완료</button>
+	</div>
+</div>
+<!-- 35_container_end -->
+
+
+
+<!--footer-->
+<div id="footer">
+	
+</div><!--footer_end-->
+
+</body> 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<link rel="stylesheet" id="theme" href="css/selectric.css" />
+<script type="text/javascript">
+$(document).ready(function(){
+	$(function(){
+		$('select').selectric();
+	});
+	
+	$('.agree_btn').click(function(){
+		if($(this).attr('src')=="img/checkboxNone.png"){
+			this.src="img/checkboxGreenCheck.png";
+		} else {
+			this.src="img/checkboxNone.png";
+		}
+	});
+
+	$('#emailSelect').change(function(){
+		var email=$(this).parent().next().children('p').text();
+		
+		if(email=='직접 입력'){
+			$('#email').val('');
+			$('#email').focus();
+		}else{
+			$(this).parent().parent().parent().prev().children('input').val(email);
+		}
+		
+	});
+});
+
+</script>
+</html>

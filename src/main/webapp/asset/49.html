@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>49</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/container.css">
+
+</head> 
+<body> 
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+
+<!--ad-->
+<div style="width:100%; background:#439fe5;">
+	<div style="width:1900px; margin:auto; margin-bottom:140px;">
+		<img style="width:1900px;" src="img/ad.png" alt="" />
+	</div>
+</div>
+<!--우측 광고-->
+<div style="display:inline-block; width:160px; height:350px; background:#2ba694; float:right;margin-left:60px;">
+</div>
+<!--container-->
+<div id="container">
+	
+	<div id="container_41">
+		<input id="subject_41" style="width:90%"type="text" placeholder="채용제목을 입력해주세요." />
+	
+	<p class="h2_41">모집요강</p>
+	<div class="contents_41">
+		<table style="border-collapse:collapse;">
+			<tr>
+				<td style="width:160px; padding-left:45px;">모집인원</td>
+				<td style="width:320px; border-right:1px solid #ececec;">
+					<input type="text" placeholder="00" />
+				</td>
+				<td style="width:127px; padding-left:45px;">근무시작일</td>
+				<td style="width:330px; margin-left:60px;">
+					<input type="text" placeholder="0000-00-00" />
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-left:45px;">직종</td>
+				<td colspan="3">
+					<select name="" id="recruit_job" style="margin-left:600px; border:none; font-size:18px;">
+						<option value="">교육</option>
+						<option value="">건설</option>
+						<option value="">농/어업</option>
+						<option value="">요식업</option>
+						<option value="">호텔</option>
+						<option value="">관광</option>
+						<option value="">예술/연예</option>
+						<option value="">무역/유통</option>
+						<option value="">기타</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-left:45px;">담당업무</td>
+				<td colspan="3">
+					<input type="text" placeholder="최대 50자까지 작성하실 수 있습니다." style="width:500px;"/>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<p class="h2_41">필수자격요건 / 우대요건</p>
+	<p style="font-size:12px; color:#e41616;">우대하실 요건에 체크해주세요.</p>
+	<div class="contents_41" style="margin-top:0px;">
+		<table style="border-collapse:collapse;">
+			<tr><!--학력-->
+				<td style="width:250px; padding-left:20px;">
+					<input type="checkbox" id="box1" style="margin-right:15px;"><label for="box1" style="padding-left:30px;">학력</label>
+				</input>
+				</td>
+				<td style="width:390px;">
+					<select name="" multiple="multiple" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">학력무관</option>
+						<option value="">고등학교</option>
+						<option value="">학사</option>
+						<option value="">석,박사</option>
+					</select>
+				</td>
+				<td colspan="2" style="width:320px; padding-left:190px;">
+					<input type="text" placeholder="직접입력" />
+				</td>
+			</tr>
+
+			<tr><!--전공-->
+				<td style="width:250px; padding-left:20px;">
+					<input type="checkbox" id="box2" style="margin-right:15px;"><label for="box2" style="padding-left:30px;">전공</label>
+					</input>
+					</td>
+				<td style="width:390px;">
+					<select name="" multiple="multiple" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">전공무관</option>
+						<option value="">어문학</option>
+						<option value="">교육학</option>
+						<option value="">인문과학</option>
+						<option value="">상경계열</option>
+						<option value="">과학</option>
+						<option value="">회계학</option>
+						<option value="">호텔경영학</option>
+						<option value="">예체능</option>
+						<option value="">IT</option>
+						<option value="">건축학</option>
+						<option value="">기타</option>
+					</select>
+				</td>
+				<td colspan="2" style="width:300px; padding-left:190px;">
+					<input type="text" placeholder="직접입력" />
+				</td>
+			</tr>
+
+			<tr><!--경력&국적-->
+				<td style="width:250px; padding-left:20px;">
+					<input type="checkbox" id="box3" style="margin-right:15px;"><label for="box3" style="padding-left:30px;">경력</label>
+				</input>
+				</td>
+				<td style="width:283px; border-right:1px solid #ececec;">
+					<select name="" multiple="multiple" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">신입</option>
+						<option value="">3년 이하</option>
+						<option value="">3~5년</option>
+						<option value="">6~8년</option>
+						<option value="">8~10년</option>
+						<option value="">10년 초과</option>
+					</select>
+				</td>
+				<td style="width:250px; padding-left:20px;">
+					<input type="checkbox" id="box4" style="margin-right:15px;"><label for="box4" style="padding-left:30px;">국적</label>
+				</input>
+				</td>
+				<td style="width:283px;">
+					<select name="" multiple="multiple"  id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">국적무관</option>
+						<option value="">대한민국</option>
+						<option value="">중국</option>
+						<option value="">미국</option>
+						<option value="">영국</option>
+						<option value="">캐나다</option>
+						<option value="">호주</option>
+						<option value="">뉴질랜드</option>
+						<option value="">남아공</option>
+						<option value="">필리핀</option>
+						<option value="">베트남</option>
+						<option value="">일본</option>
+						<option value="">기타</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr><!--성별&연령-->
+				<td style="width:250px; padding-left:20px;">
+					<input type="checkbox" id="box5" style="margin-right:15px;"><label for="box5" style="padding-left:30px;">성별</label>
+					</input>
+					</td>
+				<td style="width:283px; border-right:1px solid #ececec;">
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+					<option value="">성별무관</option>
+						<option value="">남</option>
+						<option value="">여</option>
+					</select>
+				</td>
+				<td style="width:250px; padding-left:20px;">
+					<input type="checkbox" id="box6" style="margin-right:15px;"><label for="box6" style="padding-left:30px;">연령</label>
+				</input>
+				</td>
+				<td style="width:283px;">
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">연령무관</option>
+						<option value="">20~30세</option>
+						<option value="">31~40세</option>
+						<option value="">41~50세</option>
+						<option value="">51세 이상</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr><!--자격증 보유-->
+				<td style="width:250px; padding-left:20px;">
+					<input type="checkbox" id="box7" style="margin-right:15px;"><label for="box7" style="padding-left:30px;">자격증 보유</label>
+				</input>
+				</td>
+				<td style="width:283px;">
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">무관</option>
+						<option value="">보유</option>
+					</select>
+				</td>
+				<td colspan="2" style="width:300px; padding-left:190px;">
+					<input type="text" placeholder="자격증명 직접입력" />
+				</td>
+			</tr>
+
+			<tr><!--추천서 보유-->
+				<td style="width:250px; padding-left:20px;">
+					<input type="checkbox" id="box8" style="margin-right:15px;"><label for="box8" style="padding-left:30px;">추천서 보유</label>
+				</input>
+				</td>
+				<td style="width:283px;">
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">무관</option>
+						<option value="">보유</option>
+					</select>
+				</td>
+				<td colspan="2"></td>
+			</tr>
+
+		</table>
+	</div>
+
+	<p class="h2_41">계약조건</p>
+	<div class="contents_41">
+		<table style="border-collapse:collapse;">
+			<tr>
+				<td style="width:100px; padding-left:45px;">채용구분</td>
+				<td colspan="4" style="width:810px;">
+				<input type="checkbox" id="box9"><label for="box9" style="margin-left:20px;">정규직</label></input>
+
+				<input type="checkbox" id="box10"><label for="box10" style="margin-left:40px;">계약직</label></input>
+				
+				<input type="checkbox" id="box11"><label for="box11" style="margin-left:40px;">인턴</label></input>
+				
+				<input type="checkbox" id="box12"><label for="box12" style="margin-left:40px;">파트타임</label></input>
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:100px;padding-left:45px;">급여</td>
+				<td style="width:300px;">
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">연봉</option>
+						<option value="">월급</option>
+						<option value="">일급</option>
+						<option value="">시급</option>
+						<option value="">협의 후 결정</option>
+					</select>
+				</td>
+				<td colspan="3" style="width:300px; padding-left:190px;">
+					<input type="text" placeholder="직접입력" />
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:100px;padding-left:45px;">복리후생</td>
+				<td colspan="4" style="width:30px; padding-left:20px;">
+				
+				<input type="checkbox" id="box13"><label for="box13" style="">4대보험</label></input>
+
+				<input type="checkbox" id="box14"><label for="box14" style="margin-left:20px;">중식</label></input>
+				
+				<input type="checkbox" id="box15"><label for="box15" style="margin-left:20px;">통신</label></input>
+				
+				<input type="checkbox" id="box16"><label for="box16" style="margin-left:20px;">교통</label></input>
+				
+				<input type="checkbox" id="box17"><label for="box17" style="margin-left:20px;">주거지원</label></input>
+		
+				<input type="checkbox" id="box18"><label for="box18" style="margin-left:20px;">항공권</label></input>
+				
+				<input type="checkbox" id="box19"><label for="box19" style="margin-left:20px;">이주 지원</label></input>
+				
+				<input type="checkbox" id="box20"><label for="box20" style="margin-left:20px;">기타</label></input>
+				
+				</td>
+				
+			</tr>
+		</table>
+	</div>
+	
+	<p class="h2_41">근무조건</p>
+	<div class="contents_41">
+		<table style="border-collapse:collapse;">
+			<tr>
+				<td style="width:100px;padding-left:45px;">근무요일</td>
+				<td colspan="4" style="width:815px;">
+					<input type="checkbox" id="box21"><label for="box21" style="margin-left:20px;">월</label></input>
+
+				<input type="checkbox" id="box22"><label for="box22" style="margin-left:40px;">화</label></input>
+				
+				<input type="checkbox" id="box23"><label for="box23" style="margin-left:40px;">수</label></input>
+				
+				<input type="checkbox" id="box24"><label for="box24" style="margin-left:40px;">목</label></input>
+				
+				<input type="checkbox" id="box25"><label for="box25" style="margin-left:40px;">금</label></input>
+		
+				<input type="checkbox" id="box26"><label for="box26" style="margin-left:40px;">토</label></input>
+				
+				<input type="checkbox" id="box27"><label for="box27" style="margin-left:40px;">일</label></input>
+				
+				</td>
+				
+			</tr>
+
+			<tr>
+				<td style="width:100px;padding-left:45px;">근무시간</td>
+				<td style="width:283px;">
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">00시</option>
+						<option value="">01시</option>
+						<option value="">02시</option>
+						<option value="">03시</option>
+						<option value="">04시</option>
+						<option value="">05시</option>
+						<option value="">06시</option>
+						<option value="">07시</option>
+						<option value="">08시</option>
+						<option value="">09시</option>
+						<option value="">10시</option>
+						<option value="">11시</option>
+						<option value="">12시</option>
+						<option value="">13시</option>
+						<option value="">14시</option>
+						<option value="">15시</option>
+						<option value="">16시</option>
+						<option value="">17시</option>
+						<option value="">18시</option>
+						<option value="">19시</option>
+						<option value="">20시</option>
+						<option value="">21시</option>
+						<option value="">22시</option>
+						<option value="">23시</option>
+					</select>
+				</td>
+				<td>~</td>
+				<td colspan="2" style="width:283px;">
+					
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">00시</option>
+						<option value="">01시</option>
+						<option value="">02시</option>
+						<option value="">03시</option>
+						<option value="">04시</option>
+						<option value="">05시</option>
+						<option value="">06시</option>
+						<option value="">07시</option>
+						<option value="">08시</option>
+						<option value="">09시</option>
+						<option value="">10시</option>
+						<option value="">11시</option>
+						<option value="">12시</option>
+						<option value="">13시</option>
+						<option value="">14시</option>
+						<option value="">15시</option>
+						<option value="">16시</option>
+						<option value="">17시</option>
+						<option value="">18시</option>
+						<option value="">19시</option>
+						<option value="">20시</option>
+						<option value="">21시</option>
+						<option value="">22시</option>
+						<option value="">23시</option>
+					</select>
+				</td>			
+			</tr>
+
+			<tr>
+				<td style="width:100px;padding-left:45px;">근무지역</td>
+				<td colspan="4" style="width:810px; padding-top:15px; padding-bottom:15px;">
+					<input type="checkbox" id="box28"><label for="box28" style="margin-left:20px;">서울</label></input>
+				
+					<input type="checkbox" id="box29"><label for="box29" style="margin-left:20px;">인천</label></input>
+					
+					<input type="checkbox" id="box30"><label for="box30" style="margin-left:20px;">경기</label></input>
+				
+					<input type="checkbox" id="box31"><label for="box31" style="margin-left:20px;">대전</label></input>
+					
+					<input type="checkbox" id="box32"><label for="box32" style="margin-left:20px;">대구</label></input>
+				
+					<input type="checkbox" id="box33"><label for="box33" style="margin-left:20px;">부산</label></input>
+					
+					<input type="checkbox" id="box34"><label for="box34" style="margin-left:20px;">울산</label></input>
+				
+					<input type="checkbox" id="box35"><label for="box35" style="margin-left:20px;">광주</label></input>
+					
+					<input type="checkbox" id="box36"><label for="box36" style="margin-left:20px;">경상도</label></input>
+					<br></br>
+					<input type="checkbox" id="box37"><label for="box37" style="margin-left:20px;">강원도</label></input>
+				
+					<input type="checkbox" id="box38"><label for="box38" style="margin-left:20px;">충청도</label></input>
+				
+					<input type="checkbox" id="box39"><label for="box39" style="margin-left:20px;">제주도</label></input>
+				
+										
+				</td>
+				
+			</tr>
+			
+			<tr>
+				<td style="width:100px;padding-left:45px;">고객연령</td>
+				<td style="width:283px;">
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">만 1세</option>
+						<option value="">만 2세</option>
+						<option value="">만 3세</option>
+						<option value="">만 4세</option>
+						<option value="">만 5세</option>
+						<option value="">만 6세</option>
+						<option value="">만 7세</option>
+						<option value="">만 8세</option>
+						<option value="">만 9세</option>
+						<option value="">만 10세</option>
+						<option value="">만 11세</option>
+						<option value="">만 12세</option>
+						<option value="">만 13세</option>
+						<option value="">만 14세</option>
+						<option value="">만 15세</option>
+						<option value="">만 16세</option>
+						<option value="">만 17세</option>
+						<option value="">만 18세</option>
+						<option value="">만 19세</option>
+						<option value="">20세</option>
+						<option value="">30세</option>
+						<option value="">40세</option>
+						<option value="">50세</option>
+						<option value="">60세</option>
+						<option value="">61세 이상</option>
+					</select>
+				</td>
+				<td>~</td>
+				<td colspan="2" style="width:283px;">
+					
+					<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">만 1세</option>
+						<option value="">만 2세</option>
+						<option value="">만 3세</option>
+						<option value="">만 4세</option>
+						<option value="">만 5세</option>
+						<option value="">만 6세</option>
+						<option value="">만 7세</option>
+						<option value="">만 8세</option>
+						<option value="">만 9세</option>
+						<option value="">만 10세</option>
+						<option value="">만 11세</option>
+						<option value="">만 12세</option>
+						<option value="">만 13세</option>
+						<option value="">만 14세</option>
+						<option value="">만 15세</option>
+						<option value="">만 16세</option>
+						<option value="">만 17세</option>
+						<option value="">만 18세</option>
+						<option value="">만 19세</option>
+						<option value="">20세</option>
+						<option value="">30세</option>
+						<option value="">40세</option>
+						<option value="">50세</option>
+						<option value="">60세</option>
+						<option value="">61세 이상</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td style="width:100px;padding-left:45px;">채용직무</td>
+				<td colspan="4" style="width:283px;">
+					<input style="width:90%; margin-left:25px;" type="text" placeholder="직무 상세내용을 작성해주세요." />
+				</td>
+			</tr>
+
+		</table>
+	</div>
+	<p class="h2_41">접수기간 및 방법</p>
+	<div class="contents_41">
+		<table style="border-collapse:collapse;">
+			<tr>
+				<td style="width:100px;padding-left:45px;">접수기간</td>
+				<td style="width:300px; ">
+					<input type="date" style="width:300px; margin-left:45px;"></input>
+				</td>
+				<td>~</td>
+				<td colspan="2" style="width:300px;">
+					
+					<input type="date" style="width:300px;"></input>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:100px;padding-left:45px;">접수방법</td>
+				<td colspan="4" style="width:810px;">
+					<input type="checkbox" id="box40"><label for="box40" style="margin-left:45px;">이메일</label></input>
+				
+					<input type="checkbox" id="box41"><label for="box41" style="margin-left:20px;">방문접수</label></input>
+				
+					<input type="checkbox" id="box42"><label for="box42" style="margin-left:20px;">우편</label></input>
+				
+					<input type="checkbox" id="box43"><label for="box43" style="margin-left:20px;">fax</label></input>
+				
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:240px;padding-left:45px;">채용담당자 연락처 공개여부</td>
+				<td colspan="4" style="padding-left:20px;">
+				<select name="" id="recruit_job" style="margin-left:270px; border:none; font-size:18px;">
+						<option value="">공개</option>
+						<option value="">비공개</option>
+					</select>
+				</td>
+			</tr>
+
+
+		</table>
+	</div>
+	
+	<div id="resumeBtnDiv" style="padding:0 0 100px 0 ;">
+		<button style="width:400px; margin-left:48.5px;text-align:center; height:70px; color:#ffffff; background:#3d3d3d; border:none;">변경내용 저장하기</button>
+	</div>
+	
+	<p class="h2_41" style="margin-top:70px;text-align:center;"><strong>공고 기간 연장이 필요하신가요?</strong></p>
+	
+	<div id="submitBtnDiv" style="padding-bottom:375px;">
+			<button id="submitBtn">네</button>
+			<button id="cancleBtn">아니오</button>	
+	</div>
+	
+	</div>
+
+</div>
+
+
+
+<!--footer-->
+<div id="footer">
+	
+</div><!--footer_end-->
+
+
+</body> 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<link rel="stylesheet" id="theme" href="css/selectric.css" />
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$(function(){
+		$('select').selectric();
+	});
+});
+
+</script>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>52</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/container.css">
+
+</head> 
+<body> 
+
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+<!--ad-->
+<div style="width:100%; background:#439fe5;">
+	<div style="width:1900px; margin:auto; margin-bottom:140px;">
+		<img style="width:1900px;" src="img/ad.png" alt="" />
+	</div>
+</div>
+<!--container-->
+<div id="container" style="margin-top:145px;">
+	<div id="container_41">
+		<div style="width:960px;">
+			<div style="padding-bottom:70px; ">
+				<span class="h2_41" style="">현재 게시중인 공고</span>
+				<span class="h2_41" style="float:right;margin-left:110px; color:#cbcbcb;">일반 채용 공고 <strong>1주</strong></span>
+			</div>
+		</div>
+	
+	<p class="h2_41">연장 기간 및 결제</p>
+		<div class="contents_41">
+			<table style="border-collapse:collapse;">
+				<tr>
+					<td style="width:170px; padding-left:45px;">
+						<div>
+						<input id="preimiumRecruit" type="radio" name="recruit"/>
+						<label for="preimiumRecruit">
+						<strong style="color:#2d2d2d; margin-left:5px;">프리미엄 공고 등록</strong>
+						</label>
+						</div>
+					</td>
+					<td style="width:200px;">
+					<span style="font-size:13px;  margin-left:110px;">게시기간 선택</span>
+					</td>
+					<td style="width:540px;">
+						<div style="margin-left:65px; display:inline-block;">
+							<input id="first1" type="radio" name="period1"/>
+							<label for="first1">
+							<span style="font-size:13px; margin-left:5px;">1주</span>
+							</label>				
+						</div>
+						<div style="margin-left:70px;display:inline-block;">
+							<input id="second1" type="radio" name="period1"/>
+							<label for="second1">
+							<span style="font-size:13px;margin-left:5px;">2주</span>
+							</label>
+						</div>				
+						<div style="margin-left:70px;display:inline-block;">
+							<input id="third1" type="radio" name="period1" />
+							<label for="third1">
+							<span style="font-size:13px;margin-left:5px;">3주</span>
+							</label>
+						</div>					
+						<div style="margin-left:70px;display:inline-block;">
+							<input id="forth1" type="radio" name="period1"/>
+							<label for="forth1">
+							<span style="font-size:13px;margin-left:5px;">4주</span>
+							</label>
+						</div>
+									
+					</td>
+				</tr>
+				
+				<tr>
+					<td style="width:170px;  padding-left:45px;">
+						<div>
+						<input id="generalRecruit" type="radio" name="recruit"/>
+						<label for="generalRecruit">
+						<strong style="color:#2d2d2d; margin-left:5px;">일반채용 공고 등록</strong>
+						</label>
+						
+						</div>
+					</td>
+					<td style="width:200px;">
+					<span style="font-size:13px;  margin-left:110px;">게시기간 선택</span>
+					</td>
+					<td>
+						<div style="margin-left:65px; display:inline-block;">
+							<input id="first2" type="radio" name="period2"/>
+							<label for="first2">
+							<span style="font-size:13px; margin-left:5px;">1주</span>
+							</label>				
+						</div>
+						<div style="margin-left:70px;display:inline-block;">
+							<input id="second2" type="radio" name="period2" checked/>
+							<label for="second2">
+							<span style="font-size:13px;margin-left:5px;" >2주</span>
+							</label>
+						</div>				
+						<div style="margin-left:70px;display:inline-block;">
+							<input id="third2" type="radio" name="period2"/>
+							<label for="third2">
+							<span style="font-size:13px;margin-left:5px;">3주</span>
+							</label>
+						</div>					
+						<div style="margin-left:70px;display:inline-block;">
+							<input id="forth2" type="radio" name="period2"/>
+							<label for="forth2">
+							<span style="font-size:13px;margin-left:5px;">4주</span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-left:45px;">
+						<div>
+						
+						<input id="resumeOpen"type="radio"/>
+						<label for="resumeOpen">
+						<strong style="color:#2d2d2d; margin-left:5px;">이력서 열람</strong>
+						</label>
+						</div>
+					
+					</td>
+					<td colspan="2">
+					<span style="margin-left:110px; font-weight:bold; font-size:12px; color:#8b8b8b; ">1주 고정</span>
+					<span style="font-size:12px; color:red; ">이력서 열람의 공고 등록은 무료이나 지원자의 이력서를 열람 할 경우 건별 10,000원의 비용이 발생합니다.</span>
+					</td>
+					
+				</tr>
+			</table>
+			
+			
+		</div>
+		<div style="width:960px;">
+			<div style="padding-bottom:70px; float:right;">
+				<span class="h2_41" style="">결제 예정 금액</span>
+				<span class="h2_41" style="margin-left:110px; color:#cbcbcb;">00,000원 </span>
+			</div>
+		</div>
+	
+	
+	<div id="resumeBtnDiv">
+		<button id="completeBtn" style="margin-left:48.5px; width:400px">결제하기</button>
+	</div>
+	</div>
+</div>
+
+<!--footer-->
+<div id="footer">
+	
+</div><!--footer_end-->
+
+
+</body> 
+</html>

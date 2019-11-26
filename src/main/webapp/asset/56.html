@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>56</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#main_search_wrap").load("main_search_wrap.html");  
+$("#mypage_left_sidebar").load("mypage_left_sidebar.html");
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/mypage.css">
+<link rel="stylesheet" href="css/container.css">
+
+</head> 
+<body> 
+
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+
+<div id="main_search_wrap">
+	</div><!--main_search_wrap_end-->
+	
+
+<div id="container">
+	<!--mypage_left_sidebar-->
+	<div id="mypage_left_sidebar">
+	
+	</div>
+
+	<div id="mypage_container">
+		<div id="login_div" style="position:static; border:none; margin:auto; width:430px; padding-top:130px; padding-left:0px;">
+				<div id="login_div_inner">
+					<img src="img/sns_facebook.png" style="cursor:pointer;" />
+					<img src="img/sns_google.png" style="cursor:pointer;" />
+					<img src="img/sns_naver.png" style="cursor:pointer;" />
+					<img src="img/sns_kakao.png" style="cursor:pointer;" />
+					
+					
+					<table id="login_table">
+						<tr>
+							<td>
+								<input type="text" name="id" placeholder="아이디"/>
+							</td>
+							<td rowspan="2">
+								<button style="background:#ececec;font-weight:bold; color:#515151;">로그인</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="password" name="pwd" value="" placeholder="비밀번호"/>
+							</td>
+						</tr>
+					</table>
+
+					<input id="loginMaintainBtn" type="checkbox" style="border:1px solid #a1a1a1; background:#ffffff;" />
+					<label for="loginMaintainBtn" style="color:#a1a1a1; font-size:11px; position:relative; top:-2px;">로그인 유지</label>
+					<input id="idSaveBtn" type="checkbox" style="border:1px solid #a1a1a1; background:#ffffff;" />
+					<label for="idSaveBtn" style="color:#a1a1a1; font-size:11px; position:relative; top:-2px;">아이디 저장</label>
+					<img src="img/securityLogin.png" style="margin-left:27px; position:relative; top:6px;" />
+					
+					<div id="login_util_div">
+						<div>회원가입</div>
+						<div>아이디 찾기</div>
+						<div>비밀번호 찾기</div>
+					</div>
+				</div>	
+			</div><!--로그인 박스 end-->
+	
+	</div>
+
+</div>
+
+
+<!--footer-->
+<div id="footer">
+	
+</div><!--footer_end-->
+
+</body> 
+</html>

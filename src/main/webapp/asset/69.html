@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" /> 
+<title>69</title> 
+<meta name="Keywords" content="" /> 
+<meta name="Description" content="" /> 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#header").load("header.html"); 
+$("#main_search_wrap").load("main_search_wrap.html");  
+$("#mypage_left_sidebar").load("mypage_left_sidebar.html");
+$("#footer").load("footer.html");  
+
+});
+</script>
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/mypage.css"/>
+<link rel="stylesheet" href="css/container.css"/>
+<link rel="stylesheet" id="theme" href="css/selectric.css" />
+
+</head> 
+<body> 
+
+<!--header-->
+<div id="header">
+	
+</div><!--header_end-->
+
+<div id="main_search_wrap">
+	</div><!--main_search_wrap_end-->
+	
+
+<div id="container" style="height:1050px;">
+	<!--mypage_left_sidebar-->
+	<div id="mypage_left_sidebar">	
+	</div>
+
+	<div id="mypage_container" style="top:-365px;">
+		<p class="mypage_container_h1" style="display:inline-block;">멤버쉽 혜택</p> <strong style="font-size:14px; color:#aeaeae">근로 계약서 검토 서비스</strong>
+			<div style="width:966px;margin-left:-6px; margin-top:50px;">
+			
+			<table id="membership_info" style="border:1px solid #aeaeae; width:960px;margin-top:30px; margin-bottom:25px;">
+				<tr>
+					<td style="width:450px;border-bottom:none;"><input type="text" style="width:450px;" placeholder="계약서 사용 언어" readonly></input></td>
+					<td style="border-bottom:none; ">
+						<select class="membershipSelect" style="width:310px;" name="" >
+							<option value="" selected>영어</option>
+							<option value="">한국어</option>
+							<option value="">중국어</option>
+							<option value="">일본어</option>
+						</select>
+					</td>
+					
+				</tr>			
+			</table>
+			
+			<table id="membership_info" style="border:1px solid #aeaeae; width:960px; margin-top:50px; margin-bottom:34px;">
+				<tr>
+					<td colspan="2" style="width:960px;">
+					<input type="text" placeholder="회사명" />
+					</td>
+					
+				</tr>
+				<tr>
+					<td style="width:480px;border-right:1px solid #ececec;"><input type="text" placeholder="대표자명" /></td>
+					<td style="width:480px;"><input type="text" placeholder="연락처" /></td>
+					
+				</tr>
+				<tr>
+					<td style="width:410px;">
+						<input type="text" style="border:none;" readonly placeholder="우편번호" />
+					</td>
+					<td>
+						<button style="width:127px; height:32px; background:#2d2d2d; color:#ffffff; border:none;">우편번호 검색</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="text" style="border:none;" readonly placeholder="도로명 주소" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="border-bottom:none;">
+						<input type="text" style="border:none;" placeholder="상세주소" />
+					</td>
+				</tr>
+				
+			</table>
+			
+			<table id="membership_info" style="border:1px solid #aeaeae; width:960px;margin-top:60px; margin-bottom:25px;">
+				<tr>
+					<td style="border-bottom:none;width:480px; border-right:1px solid #ececec;">
+					<input type="text" placeholder="신청자" readonly></input></td>
+				
+				<td style="border-bottom:none;">
+				<button style="margin-left:190px; width:120px; height:30px; background:#fff; color:#2d2d2d; border:1px solid #2d2d2d;">근로 계약서 첨부</button>
+				</td>
+				</tr>	
+			</table>
+			
+		</div>
+				
+		<div id="submitBtnDiv" style="display:block;">
+			<button id="submitBtn" style="margin-left:130px; border:1px solid #686868; color:#000; background:#ffffff;">검토 의뢰 및 비용 요청</button>
+		</div>		
+				
+		</div>
+	
+</div>
+
+
+<!--footer-->
+<div id="footer">
+</div><!--footer_end-->
+
+</body> 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(function(){
+		$('.membershipSelect').selectric();
+	});
+});
+
+</script>
+</html>
